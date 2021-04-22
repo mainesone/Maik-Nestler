@@ -128,9 +128,9 @@
 		C1A46CD725E5A33F004B5D51 /* Projects */ = {
 			isa = PBXGroup;
 			children = (
-				C1A46CD225E5A11E004B5D51 /* GitHubController.swift */,
-				C1A46CCD25E5A0EC004B5D51 /* PickUpController.swift */,
 				C1DC3C9825E6A46200C61CB3 /* ByteCoinController.swift */,
+				C1A46CCD25E5A0EC004B5D51 /* PickUpController.swift */,
+				C1A46CD225E5A11E004B5D51 /* GitHubController.swift */,
 				C1416709262EC8C100E16E47 /* GradientEffectViewController.swift */,
 			);
 			path = Projects;

@@ -8,8 +8,8 @@
 import UIKit
 
 class SideMenuCell: UITableViewCell {
-    // MARK: - Properties
     
+    // MARK: - Properties
     let iconImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFit
@@ -27,7 +27,6 @@ class SideMenuCell: UITableViewCell {
     }()
     
     // MARK: - Init
-    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         

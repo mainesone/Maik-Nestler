@@ -10,7 +10,6 @@ import UIKit
 class GradientEffectViewController: UIViewController, CAAnimationDelegate {
     
     //MARK: - Properties
-    
     let color1: CGColor = UIColor(red: 102/255, green: 178/255, blue: 112/255, alpha: 1).cgColor
     let color2: CGColor = UIColor(red: 32/255, green: 102/255, blue: 246/255, alpha: 1).cgColor
     let color3: CGColor = UIColor(red: 134/255, green: 242/255, blue: 234/255, alpha: 1).cgColor
@@ -28,7 +27,6 @@ class GradientEffectViewController: UIViewController, CAAnimationDelegate {
     }()
     
     //MARK: - Lifecycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -40,8 +38,7 @@ class GradientEffectViewController: UIViewController, CAAnimationDelegate {
         setUpUI()
     }
     
-    //MARK: - Helper Functions
-    
+    //MARK: - Functions
     func setUpUI() {
         view.addSubview(textLabel)
         textLabel.centerY(inView: view)

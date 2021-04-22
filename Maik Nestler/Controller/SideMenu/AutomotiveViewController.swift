@@ -19,7 +19,7 @@ class AutomotiveViewController: UIViewController {
         configureUI()
     }
     
-    //MARK: - Helper Functions
+    //MARK: - Functions
     func configureUI() {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.isTranslucent = true

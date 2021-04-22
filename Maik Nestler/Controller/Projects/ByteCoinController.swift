@@ -22,6 +22,20 @@ class ByteCoinController: UIViewController {
         return label
     }()
     
+    private let infoLabel: UILabel = {
+        let label = UILabel()
+        label.text = """
+                    get real-time information about the
+                    Bitcoin rate in different currencies
+                    with the help of API and networking
+                    """
+        label.textColor = .white
+        label.textAlignment = .left
+        label.numberOfLines = 3
+        label.font = UIFont.systemFont(ofSize: 20)
+        return label
+    }()
+    
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -37,21 +51,27 @@ class ByteCoinController: UIViewController {
         return cv
     }()
     
+    //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
     }
     
+    //MARK: - Functions
     func configureUI() {
         view.backgroundColor = .brandingColor
         view.addSubview(byteLabel)
         byteLabel.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor, paddingTop: 5, paddingLeft: 16)
+        view.addSubview(infoLabel)
+        infoLabel.anchor(top: byteLabel.bottomAnchor, left: view.leftAnchor, paddingTop: 1, paddingLeft: 16)
+        
         view.addSubview(collectionView)
-        collectionView.anchor(top: byteLabel.bottomAnchor, left: view.leftAnchor,bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingTop: 40, width: view.frame.width, height: 500)
+        collectionView.anchor(top: infoLabel.bottomAnchor, left: view.leftAnchor,bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingTop: 20, width: view.frame.width, height: 500)
         
     }
 }
 
+//MARK: - CollectionView DataSource
 extension ByteCoinController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return byteImages.count

@@ -10,7 +10,6 @@ import UIKit
 class SideMenuFooterView: UIView {
         
     //MARK: - Properties
-    
     private let quoteLabel: UILabel = {
         let label = UILabel()
         label.text = "Favorite Quote"
@@ -46,7 +45,7 @@ class SideMenuFooterView: UIView {
     }()
     
     
-    //MARK: - Lifecycle
+    //MARK: - Init
     override init(frame: CGRect) {
         super.init(frame: frame)
         

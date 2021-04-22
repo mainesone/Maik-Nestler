@@ -10,11 +10,13 @@ import UIKit
 private let cellIdentifier = "SwiftProjectCell"
 
 class GitHubController: UIViewController {
-    var gitImages = [#imageLiteral(resourceName: "git2"),#imageLiteral(resourceName: "git1") ]
+    
+    //MARK: - Properties
+    var gitImages = [#imageLiteral(resourceName: "GitPic1.jpg"),#imageLiteral(resourceName: "GitPic2.jpg"), #imageLiteral(resourceName: "GitPic3.jpg"), #imageLiteral(resourceName: "GitPic4.jpg")]
     
     private let gitLabel: UILabel = {
         let label = UILabel()
-        label.text = "GitHub Follow Up"
+        label.text = "GitHub FollowUp"
         label.textColor = .white
         label.font = UIFont.systemFont(ofSize: 32, weight: .bold)
         return label
@@ -22,33 +24,37 @@ class GitHubController: UIViewController {
     
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
-        layout.itemSize = CGSize(width: view.bounds.width, height: view.bounds.height)
-        layout.minimumLineSpacing = 3
+        layout.scrollDirection = .vertical
+        layout.itemSize = CGSize(width: 300, height: 450)
+        layout.minimumLineSpacing = 30
+        
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.layer.cornerRadius = 10
         cv.layer.borderColor = UIColor.white.cgColor
-        cv.layer.borderWidth = 5
         cv.dataSource = self
         cv.register(SwiftProjectCell.self, forCellWithReuseIdentifier: cellIdentifier)
         cv.backgroundColor = .brandingColor
         return cv
     }()
     
+    //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
     }
     
+    //MARK: - Functions
     func configureUI() {
         view.backgroundColor = .brandingColor
         view.addSubview(gitLabel)
         gitLabel.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor, paddingTop: 5, paddingLeft: 16)
         view.addSubview(collectionView)
-        collectionView.anchor(top: gitLabel.bottomAnchor, left: view.leftAnchor,bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingTop: 20, paddingLeft: 16, paddingBottom: 20, paddingRight: 16, width: view.bounds.width, height: 550)
+        collectionView.anchor(top: gitLabel.bottomAnchor, left: view.leftAnchor,bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingTop: 40, width: view.frame.width, height: 500)
+        
     }
 }
 
+//MARK: - UICollectionView DataSource
 extension GitHubController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return gitImages.count

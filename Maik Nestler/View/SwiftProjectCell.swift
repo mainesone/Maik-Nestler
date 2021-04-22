@@ -19,7 +19,6 @@ class SwiftProjectCell: UICollectionViewCell {
         imageView.alpha = 1
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
-        imageView.layer.cornerRadius = 2
         addSubview(imageView)
         imageView.anchor(top: topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, width: bounds.width, height: bounds.height)
     }

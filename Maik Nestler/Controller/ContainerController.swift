@@ -17,8 +17,7 @@ class ContainerController: UIViewController {
     var centerController: UIViewController!
     var isExpanded = false
     
-    // MARK: - Init
-    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configureHomeController()
@@ -38,8 +37,7 @@ class ContainerController: UIViewController {
         return isExpanded
     }
     
-    // MARK: - HelperFunctions
-    
+    // MARK: - Functions
     func configureNavigationBar() {
         navigationController?.navigationBar.isHidden = true
         navigationController?.navigationBar.barStyle = .black
@@ -66,7 +64,6 @@ class ContainerController: UIViewController {
     }
     
     func animatePanel(shouldExpand: Bool, sideMenuOption: SideMenuOption?) {
-        
         if shouldExpand {
             /// show menu
             UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
@@ -140,7 +137,6 @@ extension ContainerController: SFSafariViewControllerDelegate {
 
 //MARK: - MailComposeViewControllerDelegate
 extension ContainerController: MFMailComposeViewControllerDelegate {
-    
     func sendEmail() {
         let sendMailVC = configuredMailComposeViewController()
         if MFMailComposeViewController.canSendMail() {
@@ -151,7 +147,6 @@ extension ContainerController: MFMailComposeViewControllerDelegate {
     }
     
     func configuredMailComposeViewController() -> MFMailComposeViewController {
-        
         let messageBody: String
         let deviceModelName = UIDevice.modelName
         let iOSVersion = UIDevice.current.systemVersion
@@ -173,7 +168,7 @@ extension ContainerController: MFMailComposeViewControllerDelegate {
         return mailVC
     }
     
-    /// This alert gets shown if the device is a simulator, doesn't have Apple mail set up, or if mail in not available due to connectivity issues.
+    /// This alert gets shown if the device is a simulator, doesn't have Apple mail set up, or if mail is not available due to connectivity issues.
     func showSendMailErrorAlert() {
         let sendMailErrorAlert = UIAlertController(title: "Could Not Send Email",
                                                    message: "Your device could not send email. Please check email configuration and internet connection and try again.",

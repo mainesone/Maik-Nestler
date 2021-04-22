@@ -15,15 +15,13 @@ class SideMenuController: UIViewController {
     var tableView: UITableView!
     var delegate: HomeControllerDelegate?
     
-    // MARK: - Init
-    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
     }
     
-    // MARK: - Handlers
-    
+    // MARK: - Functions
     func configureTableView() {
         tableView = UITableView()
         tableView.delegate = self
@@ -41,6 +39,7 @@ class SideMenuController: UIViewController {
     }
 }
 
+//MARK: - TableView Delegate & DataSource
 extension SideMenuController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 7

@@ -13,7 +13,7 @@ class SwiftController: UIViewController {
     
     //MARK: - Properties
     let tableView = UITableView()
-    var projects = ["ByteCoin", "PickUp", "fyxes", "GitHub Follow Up", "GradientEffect"]
+    var projects = ["ByteCoin", "PickUp", "GitHub Follow Up", "GradientEffect"]
     
     //MARK: - Lifecycle
     override func viewDidLoad() {
@@ -21,7 +21,7 @@ class SwiftController: UIViewController {
         configureUI()
     }
 
-    //MARK: - HelperFunctions
+    //MARK: - Functions
     func configureUI () {
         view.backgroundColor = .brandingColor
         view.addSubview(tableView)
@@ -85,18 +85,18 @@ extension SwiftController: UITableViewDelegate, UITableViewDataSource {
         }
         
         else if indexPath.row == 1 {
-            let gitVC = GitHubController()
-            gitVC.modalPresentationStyle = .formSheet
-            navigationController?.present(gitVC, animated: true, completion: nil)
-        }
-        
-        else if indexPath.row == 2 {
             let pickUpVC = PickUpController()
             pickUpVC.modalPresentationStyle = .formSheet
             navigationController?.present(pickUpVC, animated: true, completion: nil)
         }
         
-        else if indexPath.row == 4 {
+        else if indexPath.row == 2 {
+            let gitVC = GitHubController()
+            gitVC.modalPresentationStyle = .formSheet
+            navigationController?.present(gitVC, animated: true, completion: nil)
+        }
+        
+        else if indexPath.row == 3 {
             let gradientVC = GradientEffectViewController()
             gradientVC.modalPresentationStyle = .formSheet
             navigationController?.present(gradientVC, animated: true, completion: nil)
