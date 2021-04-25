@@ -12,7 +12,7 @@ private let cellIdentifier = "SwiftProjectCell"
 class PickUpController: UIViewController {
     
     //MARK: - Properties
-    var pickUpImages = [#imageLiteral(resourceName: "PickPic1"), #imageLiteral(resourceName: "PickPic2"), #imageLiteral(resourceName: "PickPic3"), #imageLiteral(resourceName: "PickPic4.jpg"), #imageLiteral(resourceName: "PickPic5.jpg"), #imageLiteral(resourceName: "PickPic6.jpg")]
+    var pickUpImages = [#imageLiteral(resourceName: "Pickup1.jpg"),#imageLiteral(resourceName: "Pickup2.jpg"),#imageLiteral(resourceName: "Pickup3.jpg"),#imageLiteral(resourceName: "PickPic1"), #imageLiteral(resourceName: "PickPic2"), #imageLiteral(resourceName: "PickPic3"), #imageLiteral(resourceName: "PickPic4.jpg"), #imageLiteral(resourceName: "PickPic5.jpg"), #imageLiteral(resourceName: "PickPic6.jpg")]
     
     private let pickUpLabel: UILabel = {
         let label = UILabel()
