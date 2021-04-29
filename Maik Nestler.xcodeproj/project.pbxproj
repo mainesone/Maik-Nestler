@@ -28,6 +28,9 @@
 		C1BCCADF25D52786004955DA /* Maik_NestlerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCCADE25D52786004955DA /* Maik_NestlerUITests.swift */; };
 		C1BCCAF725D527A6004955DA /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCCAF625D527A6004955DA /* HomeController.swift */; };
 		C1BCCAFD25D52845004955DA /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCCAFC25D52845004955DA /* Extension.swift */; };
+		C1BEF0DE263986190037DE64 /* AutomotiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BEF0DD263986190037DE64 /* AutomotiveCell.swift */; };
+		C1BEF0E326398B9F0037DE64 /* AutomotiveSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BEF0E226398B9F0037DE64 /* AutomotiveSection.swift */; };
+		C1BEF101263AD9E90037DE64 /* HobbiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BEF100263AD9E90037DE64 /* HobbiesViewController.swift */; };
 		C1DC3C9025E6635600C61CB3 /* SwiftProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC3C8F25E6635500C61CB3 /* SwiftProjectCell.swift */; };
 		C1DC3C9925E6A46200C61CB3 /* ByteCoinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC3C9825E6A46200C61CB3 /* ByteCoinController.swift */; };
 		C1DC3CA425E7054900C61CB3 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC3CA325E7054900C61CB3 /* CustomButton.swift */; };
@@ -78,6 +81,9 @@
 		C1BCCAE025D52786004955DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1BCCAF625D527A6004955DA /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		C1BCCAFC25D52845004955DA /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		C1BEF0DD263986190037DE64 /* AutomotiveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomotiveCell.swift; sourceTree = "<group>"; };
+		C1BEF0E226398B9F0037DE64 /* AutomotiveSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomotiveSection.swift; sourceTree = "<group>"; };
+		C1BEF100263AD9E90037DE64 /* HobbiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbiesViewController.swift; sourceTree = "<group>"; };
 		C1DC3C8F25E6635500C61CB3 /* SwiftProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftProjectCell.swift; sourceTree = "<group>"; };
 		C1DC3C9825E6A46200C61CB3 /* ByteCoinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByteCoinController.swift; sourceTree = "<group>"; };
 		C1DC3CA325E7054900C61CB3 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -112,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				C19332002600D75200D463F1 /* AutomotiveViewController.swift */,
+				C1BEF100263AD9E90037DE64 /* HobbiesViewController.swift */,
 			);
 			path = SideMenu;
 			sourceTree = "<group>";
@@ -121,6 +128,7 @@
 			children = (
 				C12426ED25F6DA6800CF645C /* SideMenuOption.swift */,
 				C124271125FEB6D400CF645C /* SocialMedia.swift */,
+				C1BEF0E226398B9F0037DE64 /* AutomotiveSection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -213,12 +221,21 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		C1DC3C8E25E6634700C61CB3 /* View */ = {
+		C1BEF0D9263984690037DE64 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				C1DC3C8F25E6635500C61CB3 /* SwiftProjectCell.swift */,
-				C1DC3CA325E7054900C61CB3 /* CustomButton.swift */,
 				C12426F225F6DB4A00CF645C /* SideMenuCell.swift */,
+				C1BEF0DD263986190037DE64 /* AutomotiveCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C1DC3C8E25E6634700C61CB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1BEF0D9263984690037DE64 /* Cell */,
+				C1DC3CA325E7054900C61CB3 /* CustomButton.swift */,
 				C124270525F7880100CF645C /* SideMenuFooterView.swift */,
 			);
 			path = View;
@@ -355,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C141670A262EC8C100E16E47 /* GradientEffectViewController.swift in Sources */,
+				C1BEF101263AD9E90037DE64 /* HobbiesViewController.swift in Sources */,
 				C1A46CD325E5A11E004B5D51 /* GitHubController.swift in Sources */,
 				C19332012600D75200D463F1 /* AutomotiveViewController.swift in Sources */,
 				C1DC3C9025E6635600C61CB3 /* SwiftProjectCell.swift in Sources */,
@@ -362,8 +380,10 @@
 				C12426F925F6DBB900CF645C /* SideMenuController.swift in Sources */,
 				C1BCCABD25D52784004955DA /* AppDelegate.swift in Sources */,
 				C1BCCABF25D52784004955DA /* SceneDelegate.swift in Sources */,
+				C1BEF0DE263986190037DE64 /* AutomotiveCell.swift in Sources */,
 				C1A46CA925E5135F004B5D51 /* SwiftController.swift in Sources */,
 				C12426EE25F6DA6800CF645C /* SideMenuOption.swift in Sources */,
+				C1BEF0E326398B9F0037DE64 /* AutomotiveSection.swift in Sources */,
 				C124271225FEB6D400CF645C /* SocialMedia.swift in Sources */,
 				C1A46CCE25E5A0EC004B5D51 /* PickUpController.swift in Sources */,
 				C124270625F7880100CF645C /* SideMenuFooterView.swift in Sources */,
