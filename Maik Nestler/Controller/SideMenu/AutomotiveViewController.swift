@@ -13,7 +13,6 @@ class AutomotiveViewController: UIViewController {
     
     //MARK: - Properties
     let tableView = UITableView()
-    let indexPath = ["Allora", "MSX", "JAPAN"]
     
     //MARK: - Lifecycle
     override func viewDidLoad() {
@@ -40,7 +39,6 @@ class AutomotiveViewController: UIViewController {
         
         view.addSubview(tableView)
         tableView.dataSource = self
-        tableView.delegate = self
         tableView.register(AutomotiveCell.self, forCellReuseIdentifier: reuseIdentifier)
         tableView.separatorStyle = .none
         tableView.rowHeight = 100
@@ -54,22 +52,6 @@ class AutomotiveViewController: UIViewController {
     @objc func dismisVC() {
         dismiss(animated: true, completion: nil)
     }
-}
-
-extension AutomotiveViewController: UITableViewDelegate {
-//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        guard let section = AutomotiveSections(rawValue: section) else { return nil }
-//        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 50))
-//        headerView.backgroundColor = .brandingColor
-//        
-//        let headerLabel = UILabel(frame: CGRect(x: 16, y: 0, width: headerView.frame.width - 10, height: headerView.frame.height - 10))
-//        headerLabel.text = section.description
-//        headerLabel.textColor = .white
-//        headerLabel.font = UIFont.systemFont(ofSize: 24, weight: .bold)
-//        headerLabel.alpha = 0.75
-//        headerView.addSubview(headerLabel)
-//        return headerView
-//    }
 }
 
 extension AutomotiveViewController: UITableViewDataSource {
