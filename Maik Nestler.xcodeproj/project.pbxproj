@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1014DBD2643371500DD9188 /* CardImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1014DBC2643371500DD9188 /* CardImage.swift */; };
+		C1014DC22643385E00DD9188 /* CardLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1014DC12643385E00DD9188 /* CardLabel.swift */; };
+		C1014DC726433B6C00DD9188 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1014DC626433B6C00DD9188 /* CardView.swift */; };
 		C12426EE25F6DA6800CF645C /* SideMenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12426ED25F6DA6800CF645C /* SideMenuOption.swift */; };
 		C12426F325F6DB4A00CF645C /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12426F225F6DB4A00CF645C /* SideMenuCell.swift */; };
 		C12426F925F6DBB900CF645C /* SideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12426F825F6DBB900CF645C /* SideMenuController.swift */; };
@@ -54,6 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C1014DBC2643371500DD9188 /* CardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImage.swift; sourceTree = "<group>"; };
+		C1014DC12643385E00DD9188 /* CardLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLabel.swift; sourceTree = "<group>"; };
+		C1014DC626433B6C00DD9188 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C12426ED25F6DA6800CF645C /* SideMenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOption.swift; sourceTree = "<group>"; };
 		C12426F225F6DB4A00CF645C /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
 		C12426F825F6DBB900CF645C /* SideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuController.swift; sourceTree = "<group>"; };
@@ -114,6 +120,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C1014DCB26433EFF00DD9188 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				C1014DC626433B6C00DD9188 /* CardView.swift */,
+				C1014DBC2643371500DD9188 /* CardImage.swift */,
+				C1014DC12643385E00DD9188 /* CardLabel.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
 		C12426F725F6DB8500CF645C /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +250,7 @@
 		C1DC3C8E25E6634700C61CB3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C1014DCB26433EFF00DD9188 /* Card */,
 				C1BEF0D9263984690037DE64 /* Cell */,
 				C1DC3CA325E7054900C61CB3 /* CustomButton.swift */,
 				C124270525F7880100CF645C /* SideMenuFooterView.swift */,
@@ -376,6 +393,7 @@
 				C1A46CD325E5A11E004B5D51 /* GitHubController.swift in Sources */,
 				C19332012600D75200D463F1 /* AutomotiveViewController.swift in Sources */,
 				C1DC3C9025E6635600C61CB3 /* SwiftProjectCell.swift in Sources */,
+				C1014DBD2643371500DD9188 /* CardImage.swift in Sources */,
 				C1DC3C9925E6A46200C61CB3 /* ByteCoinController.swift in Sources */,
 				C12426F925F6DBB900CF645C /* SideMenuController.swift in Sources */,
 				C1BCCABD25D52784004955DA /* AppDelegate.swift in Sources */,
@@ -384,12 +402,14 @@
 				C1A46CA925E5135F004B5D51 /* SwiftController.swift in Sources */,
 				C12426EE25F6DA6800CF645C /* SideMenuOption.swift in Sources */,
 				C1BEF0E326398B9F0037DE64 /* AutomotiveSection.swift in Sources */,
+				C1014DC726433B6C00DD9188 /* CardView.swift in Sources */,
 				C124271225FEB6D400CF645C /* SocialMedia.swift in Sources */,
 				C1A46CCE25E5A0EC004B5D51 /* PickUpController.swift in Sources */,
 				C124270625F7880100CF645C /* SideMenuFooterView.swift in Sources */,
 				C1DC3CA425E7054900C61CB3 /* CustomButton.swift in Sources */,
 				C124271A25FEC9B000CF645C /* MNDeviceExtension.swift in Sources */,
 				C1BCCAF725D527A6004955DA /* HomeController.swift in Sources */,
+				C1014DC22643385E00DD9188 /* CardLabel.swift in Sources */,
 				C124270125F6DDBE00CF645C /* ContainerController.swift in Sources */,
 				C1BCCAFD25D52845004955DA /* Extension.swift in Sources */,
 				C12426F325F6DB4A00CF645C /* SideMenuCell.swift in Sources */,

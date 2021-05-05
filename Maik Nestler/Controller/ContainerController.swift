@@ -91,7 +91,10 @@ class ContainerController: UIViewController {
             nav.modalPresentationStyle = .fullScreen
             self.present(nav, animated: true, completion: nil)
         case .hobbies:
-            print("Show Inbox")
+            let hobbyVC = HobbiesViewController()
+            let nav = UINavigationController(rootViewController: hobbyVC)
+            nav.modalPresentationStyle = .fullScreen
+            self.present(nav, animated: true, completion: nil)
         case .milestones:
             print("Show Milestones")
         case .email:
