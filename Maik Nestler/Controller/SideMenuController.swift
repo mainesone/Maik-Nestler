@@ -35,7 +35,10 @@ class SideMenuController: UIViewController {
         tableView.tableFooterView = SideMenuFooterView()
         
         view.addSubview(tableView)
-        tableView.anchor(top: view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor)
+        tableView.anchor(top: view.topAnchor,
+                         left: view.leftAnchor,
+                         bottom: view.bottomAnchor,
+                         right: view.rightAnchor)
     }
 }
 

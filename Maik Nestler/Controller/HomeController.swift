@@ -131,13 +131,15 @@ class HomeController: UIViewController {
         navigationItem.backButtonTitle = ""
         
         let leftNavIcon = UIBarButtonItem(image: UIImage(systemName: "text.justify"),
-                                          style: .plain, target: self,
+                                          style: .plain,
+                                          target: self,
                                           action: #selector(handleMenuToggle))
         leftNavIcon.tintColor = .white
         navigationItem.leftBarButtonItem = leftNavIcon
         
         let rightNavIcon = UIBarButtonItem(image: UIImage(systemName: "swift"),
-                                           style: .plain, target: self,
+                                           style: .plain,
+                                           target: self,
                                            action: #selector(rightNavIconTapped))
         rightNavIcon.tintColor = .white
         navigationItem.rightBarButtonItem = rightNavIcon
@@ -146,24 +148,26 @@ class HomeController: UIViewController {
     func configureUI() {
         view.backgroundColor = .brandingColor
         view.addSubview(imageView)
-        imageView.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor,
+        imageView.anchor(top: view.safeAreaLayoutGuide.topAnchor,
+                         left: view.leftAnchor,
                          paddingTop: 1, paddingLeft: 16)
         imageView.setDimensions(height: 150, width: 150)
         imageView.layer.cornerRadius = 150 / 2
         
         let infoStack = UIStackView(arrangedSubviews: [nameLabel,
-                                                       aboutLabel,
-                                                       ])
+                                                       aboutLabel])
         infoStack.axis = .vertical
         infoStack.spacing = 2
         infoStack.distribution = .fillProportionally
         
         view.addSubview(infoStack)
-        infoStack.anchor(top: imageView.bottomAnchor, left: view.leftAnchor,
+        infoStack.anchor(top: imageView.bottomAnchor,
+                         left: view.leftAnchor,
                          paddingTop: 20, paddingLeft: 16)
         
         view.addSubview(skillLabel)
-        skillLabel.anchor(top: infoStack.bottomAnchor, left: view.leftAnchor,
+        skillLabel.anchor(top: infoStack.bottomAnchor,
+                          left: view.leftAnchor,
                           paddingTop: 40, paddingLeft: 16)
         
         xCodeButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
@@ -197,6 +201,8 @@ class HomeController: UIViewController {
         mainSkillStack.distribution = .fillEqually
         mainSkillStack.spacing = 20
         view.addSubview(mainSkillStack)
-        mainSkillStack.anchor(top: skillLabel.bottomAnchor, left: view.leftAnchor, paddingTop: 20, paddingLeft: 16)
+        mainSkillStack.anchor(top: skillLabel.bottomAnchor,
+                              left: view.leftAnchor,
+                              paddingTop: 20, paddingLeft: 16)
     }
 }

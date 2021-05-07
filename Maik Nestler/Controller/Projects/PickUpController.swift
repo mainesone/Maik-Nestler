@@ -22,6 +22,22 @@ class PickUpController: UIViewController {
         return label
     }()
     
+    private let infoLabel: UILabel = {
+        let label = UILabel()
+        label.text = """
+                    Fully programmatic approach without
+                    the use of storyboards. Geolocation
+                    capability using GeoFire. Advanced
+                    backend development and architecture
+                    skills using Firebase.
+                    """
+        label.textColor = .white
+        label.textAlignment = .left
+        label.numberOfLines = 5
+        label.font = UIFont.systemFont(ofSize: 20)
+        return label
+    }()
+    
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -46,10 +62,24 @@ class PickUpController: UIViewController {
     //MARK: - Functions
     func configureUI() {
         view.backgroundColor = .brandingColor
+        
         view.addSubview(pickUpLabel)
-        pickUpLabel.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor, paddingTop: 5, paddingLeft: 16)
+        pickUpLabel.anchor(top: view.safeAreaLayoutGuide.topAnchor,
+                           left: view.leftAnchor,
+                           paddingTop: 5, paddingLeft: 16)
+        
+        view.addSubview(infoLabel)
+        infoLabel.anchor(top: pickUpLabel.bottomAnchor,
+                         left: view.leftAnchor,
+                         paddingTop: 1, paddingLeft: 16)
+        
         view.addSubview(collectionView)
-        collectionView.anchor(top: pickUpLabel.bottomAnchor, left: view.leftAnchor,bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingTop: 40, width: view.frame.width, height: 500)
+        collectionView.anchor(top: infoLabel.bottomAnchor,
+                              left: view.leftAnchor,
+                              bottom: view.safeAreaLayoutGuide.bottomAnchor,
+                              right: view.rightAnchor,
+                              paddingTop: 20,
+                              width: view.frame.width, height: 500)
     }
 }
 

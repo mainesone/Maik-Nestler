@@ -8,6 +8,7 @@
 import UIKit
 
 class CardView: UIView {
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
@@ -18,10 +19,12 @@ class CardView: UIView {
     }
     
     func configure() {
-        backgroundColor = .white
-        layer.cornerRadius = 10
-        layer.shadowColor = UIColor.black.cgColor
+        backgroundColor = .brandingColor
+        layer.cornerRadius = 15
         layer.shadowRadius = 2
-        layer.shadowOpacity = 0.7
+        layer.shadowOpacity = 1
+        layer.shadowOffset = CGSize( width: 2, height: 2)
+        layer.shadowColor = UIColor.black.cgColor
+        layer.masksToBounds = false
     }
 }

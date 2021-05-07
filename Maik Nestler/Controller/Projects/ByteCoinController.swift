@@ -61,12 +61,22 @@ class ByteCoinController: UIViewController {
     func configureUI() {
         view.backgroundColor = .brandingColor
         view.addSubview(byteLabel)
-        byteLabel.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor, paddingTop: 5, paddingLeft: 16)
+        byteLabel.anchor(top: view.safeAreaLayoutGuide.topAnchor,
+                         left: view.leftAnchor,
+                         paddingTop: 5, paddingLeft: 16)
+        
         view.addSubview(infoLabel)
-        infoLabel.anchor(top: byteLabel.bottomAnchor, left: view.leftAnchor, paddingTop: 1, paddingLeft: 16)
+        infoLabel.anchor(top: byteLabel.bottomAnchor,
+                         left: view.leftAnchor,
+                         paddingTop: 1, paddingLeft: 16)
         
         view.addSubview(collectionView)
-        collectionView.anchor(top: infoLabel.bottomAnchor, left: view.leftAnchor,bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingTop: 20, width: view.frame.width, height: 500)
+        collectionView.anchor(top: infoLabel.bottomAnchor,
+                              left: view.leftAnchor,
+                              bottom: view.safeAreaLayoutGuide.bottomAnchor,
+                              right: view.rightAnchor,
+                              paddingTop: 20,
+                              width: view.frame.width, height: 500)
         
     }
 }

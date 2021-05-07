@@ -3,4 +3,129 @@
    uuid = "B0EBBC2C-39EB-44E6-A651-A5614BC35510"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DC444E94-832C-436F-B923-3C1C030FFAC3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Maik Nestler/Controller/SideMenu/MilestoneViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "masterCard"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "DC444E94-832C-436F-B923-3C1C030FFAC3 - 4337ba5b9a441bcc"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Maik_Nestler.MilestoneViewController.masterCard.getter : __C.UIView"
+                  moduleName = "Maik Nestler"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/faszinationfootball/Documents/App%20Projects/Maik%20Nestler/Maik%20Nestler/Controller/SideMenu/MilestoneViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "217">
+               </Location>
+               <Location
+                  uuid = "DC444E94-832C-436F-B923-3C1C030FFAC3 - 6c148a0ab2a6ae22"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.UIView in Maik_Nestler.MilestoneViewController.masterCard.getter : __C.UIView"
+                  moduleName = "Maik Nestler"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/faszinationfootball/Documents/App%20Projects/Maik%20Nestler/Maik%20Nestler/Controller/SideMenu/MilestoneViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "22">
+               </Location>
+               <Location
+                  uuid = "DC444E94-832C-436F-B923-3C1C030FFAC3 - 8641b55e1bd07058"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Maik_Nestler.MilestoneViewController.masterCard.setter : __C.UIView"
+                  moduleName = "Maik Nestler"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/faszinationfootball/Documents/App%20Projects/Maik%20Nestler/Maik%20Nestler/Controller/SideMenu/MilestoneViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "DC444E94-832C-436F-B923-3C1C030FFAC3 - 3bcf29ef3ee5946a"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Maik_Nestler.MilestoneViewController.masterCard.modify : __C.UIView"
+                  moduleName = "Maik Nestler"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/faszinationfootball/Documents/App%20Projects/Maik%20Nestler/Maik%20Nestler/Controller/SideMenu/MilestoneViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "DC444E94-832C-436F-B923-3C1C030FFAC3 - 1ecfa3aaaddc41ea"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Maik_Nestler.MilestoneViewController.masterCard.modify : __C.UIView with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Maik Nestler"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/faszinationfootball/Documents/App%20Projects/Maik%20Nestler/Maik%20Nestler/Controller/SideMenu/MilestoneViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "DC444E94-832C-436F-B923-3C1C030FFAC3 - b2340cad6f17ae6e"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Maik_Nestler.MilestoneViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Maik_Nestler.MilestoneViewController"
+                  moduleName = "Maik Nestler"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/faszinationfootball/Documents/App%20Projects/Maik%20Nestler/Maik%20Nestler/Controller/SideMenu/MilestoneViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "805">
+               </Location>
+               <Location
+                  uuid = "DC444E94-832C-436F-B923-3C1C030FFAC3 - 13e040e7b4d2d826"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Maik_Nestler.MilestoneViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Maik_Nestler.MilestoneViewController&gt;"
+                  moduleName = "Maik Nestler"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/faszinationfootball/Documents/App%20Projects/Maik%20Nestler/Maik%20Nestler/Controller/SideMenu/MilestoneViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "746">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

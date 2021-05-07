@@ -17,7 +17,6 @@ enum SideMenuOption: Int, CustomStringConvertible {
     case gitHub
     case instagram
     
-    
     var description: String {
         switch self {
         case .automotive: return "Automotive Career"

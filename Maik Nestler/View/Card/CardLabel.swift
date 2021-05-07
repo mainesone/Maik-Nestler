@@ -28,6 +28,7 @@ class CardLabel: UILabel {
             
         textColor = .white
         adjustsFontSizeToFitWidth = true
-        
+        layer.cornerRadius = 10
+        clipsToBounds = true 
     }
 }

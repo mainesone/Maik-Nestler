@@ -14,10 +14,8 @@ enum JobSections: Int, CaseIterable {
     case school
     case tech
     
-    
     var description: String {
         switch self {
-        
         case .technicalSupport: return "Dealer Direct Support Engineer"
         case .technicalDiagnostic: return "Technical Support Engineer"
         case .masterTech: return "Master Technician"
@@ -34,10 +32,8 @@ enum CompanySection: Int, CaseIterable {
     case master
     case tlo
     
-    
     var description: String {
         switch self {
-        
         case .volvoCars: return "Volvo Car Germany GmbH"
         case .msx: return "MSX International"
         case .infiniti: return "Infiniti Center"
@@ -54,10 +50,8 @@ enum DateSection: Int, CaseIterable {
     case masterTime
     case tloTime
     
-    
     var description: String {
         switch self {
-        
         case .volvoTime: return "June 2015 - current"
         case .msxTime: return "January 2015 - June 2015"
         case .infinitiTime: return "January 2014 - January 2015"

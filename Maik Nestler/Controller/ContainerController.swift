@@ -66,13 +66,21 @@ class ContainerController: UIViewController {
     func animatePanel(shouldExpand: Bool, sideMenuOption: SideMenuOption?) {
         if shouldExpand {
             /// show menu
-            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
+            UIView.animate(withDuration: 0.5, delay: 0,
+                           usingSpringWithDamping: 0.8,
+                           initialSpringVelocity: 0,
+                           options: .curveEaseInOut,
+                           animations: {
                 self.centerController.view.frame.origin.x = self.centerController.view.frame.width - 80
             }, completion: nil)
             
         } else {
             /// hide menu
-            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
+            UIView.animate(withDuration: 0.5, delay: 0,
+                           usingSpringWithDamping: 0.8,
+                           initialSpringVelocity: 0,
+                           options: .curveEaseInOut,
+                           animations: {
                 self.centerController.view.frame.origin.x = 0
             }) { (_) in
                 guard let sideMenuOption = sideMenuOption else { return }
@@ -90,26 +98,39 @@ class ContainerController: UIViewController {
             let nav = UINavigationController(rootViewController: autoVC)
             nav.modalPresentationStyle = .fullScreen
             self.present(nav, animated: true, completion: nil)
+            
         case .hobbies:
             let hobbyVC = HobbiesViewController()
             let nav = UINavigationController(rootViewController: hobbyVC)
             nav.modalPresentationStyle = .fullScreen
             self.present(nav, animated: true, completion: nil)
+            
         case .milestones:
-            print("Show Milestones")
+            let mileVC = MilestoneViewController()
+            let nav = UINavigationController(rootViewController: mileVC)
+            nav.modalPresentationStyle = .fullScreen
+            self.present(nav, animated: true, completion: nil)
+            
         case .email:
             sendEmail()
+            
         case .linkedIn:
             launchSafariVC(withURLString: SocialMedia.linkedInLink.rawValue)
+            
         case .gitHub:
             launchSafariVC(withURLString: SocialMedia.gitHubLink.rawValue)
+            
         case .instagram:
             launchSafariVC(withURLString: SocialMedia.instagramLink.rawValue)
         }
     }
     
     func animateStatusBar() {
-        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
+        UIView.animate(withDuration: 0.5, delay: 0,
+                       usingSpringWithDamping: 0.8,
+                       initialSpringVelocity: 0,
+                       options: .curveEaseInOut,
+                       animations: {
             self.setNeedsStatusBarAppearanceUpdate()
         }, completion: nil)
     }
@@ -166,7 +187,7 @@ extension ContainerController: MFMailComposeViewControllerDelegate {
         let mailVC = MFMailComposeViewController()
         mailVC.mailComposeDelegate = self
         mailVC.setToRecipients([contactEmail])
-        mailVC.setSubject("Say Hey to Maik and leave some feedback")
+        mailVC.setSubject("Say Hello to Maik and leave him a message")
         mailVC.setMessageBody(messageBody, isHTML: false)
         return mailVC
     }
@@ -177,7 +198,10 @@ extension ContainerController: MFMailComposeViewControllerDelegate {
                                                    message: "Your device could not send email. Please check email configuration and internet connection and try again.",
                                                    preferredStyle: .alert)
         
-        sendMailErrorAlert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: nil))
+        sendMailErrorAlert.addAction(UIAlertAction(title: "Okay",
+                                                   style: .cancel,
+                                                   handler: nil))
+        
         sendMailErrorAlert.view.tintColor = .brandingColor
         self.present(sendMailErrorAlert, animated: true, completion: nil)
     }

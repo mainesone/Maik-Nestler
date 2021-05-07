@@ -101,7 +101,8 @@ class HobbiesViewController: UIViewController, UIScrollViewDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        scrollView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height + 500)
+        scrollView.contentSize = CGSize(width: UIScreen.main.bounds.width,
+                                        height: UIScreen.main.bounds.height + 500)
     }
     
     //MARK: - Selectors

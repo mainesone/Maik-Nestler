@@ -24,7 +24,6 @@
 		C1A46CD325E5A11E004B5D51 /* GitHubController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A46CD225E5A11E004B5D51 /* GitHubController.swift */; };
 		C1BCCABD25D52784004955DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCCABC25D52784004955DA /* AppDelegate.swift */; };
 		C1BCCABF25D52784004955DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCCABE25D52784004955DA /* SceneDelegate.swift */; };
-		C1BCCAC425D52784004955DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1BCCAC225D52784004955DA /* Main.storyboard */; };
 		C1BCCAC625D52786004955DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1BCCAC525D52786004955DA /* Assets.xcassets */; };
 		C1BCCAC925D52786004955DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1BCCAC725D52786004955DA /* LaunchScreen.storyboard */; };
 		C1BCCAD425D52786004955DA /* Maik_NestlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCCAD325D52786004955DA /* Maik_NestlerTests.swift */; };
@@ -34,6 +33,8 @@
 		C1BEF0DE263986190037DE64 /* AutomotiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BEF0DD263986190037DE64 /* AutomotiveCell.swift */; };
 		C1BEF0E326398B9F0037DE64 /* AutomotiveSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BEF0E226398B9F0037DE64 /* AutomotiveSection.swift */; };
 		C1BEF101263AD9E90037DE64 /* HobbiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BEF100263AD9E90037DE64 /* HobbiesViewController.swift */; };
+		C1C764F12643EA550040F68E /* MilestoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C764F02643EA550040F68E /* MilestoneViewController.swift */; };
+		C1C764F626457FBC0040F68E /* CardText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C764F526457FBC0040F68E /* CardText.swift */; };
 		C1DC3C9025E6635600C61CB3 /* SwiftProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC3C8F25E6635500C61CB3 /* SwiftProjectCell.swift */; };
 		C1DC3C9925E6A46200C61CB3 /* ByteCoinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC3C9825E6A46200C61CB3 /* ByteCoinController.swift */; };
 		C1DC3CA425E7054900C61CB3 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC3CA325E7054900C61CB3 /* CustomButton.swift */; };
@@ -75,7 +76,6 @@
 		C1BCCAB925D52784004955DA /* Maik Nestler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maik Nestler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1BCCABC25D52784004955DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1BCCABE25D52784004955DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C1BCCAC325D52784004955DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C1BCCAC525D52786004955DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1BCCAC825D52786004955DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1BCCACA25D52786004955DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,6 +90,8 @@
 		C1BEF0DD263986190037DE64 /* AutomotiveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomotiveCell.swift; sourceTree = "<group>"; };
 		C1BEF0E226398B9F0037DE64 /* AutomotiveSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomotiveSection.swift; sourceTree = "<group>"; };
 		C1BEF100263AD9E90037DE64 /* HobbiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbiesViewController.swift; sourceTree = "<group>"; };
+		C1C764F02643EA550040F68E /* MilestoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestoneViewController.swift; sourceTree = "<group>"; };
+		C1C764F526457FBC0040F68E /* CardText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardText.swift; sourceTree = "<group>"; };
 		C1DC3C8F25E6635500C61CB3 /* SwiftProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftProjectCell.swift; sourceTree = "<group>"; };
 		C1DC3C9825E6A46200C61CB3 /* ByteCoinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByteCoinController.swift; sourceTree = "<group>"; };
 		C1DC3CA325E7054900C61CB3 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				C1014DC626433B6C00DD9188 /* CardView.swift */,
 				C1014DBC2643371500DD9188 /* CardImage.swift */,
 				C1014DC12643385E00DD9188 /* CardLabel.swift */,
+				C1C764F526457FBC0040F68E /* CardText.swift */,
 			);
 			path = Card;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			children = (
 				C19332002600D75200D463F1 /* AutomotiveViewController.swift */,
 				C1BEF100263AD9E90037DE64 /* HobbiesViewController.swift */,
+				C1C764F02643EA550040F68E /* MilestoneViewController.swift */,
 			);
 			path = SideMenu;
 			sourceTree = "<group>";
@@ -189,7 +193,6 @@
 				C1BCCAFB25D52839004955DA /* Utilities */,
 				C1BCCABC25D52784004955DA /* AppDelegate.swift */,
 				C1BCCABE25D52784004955DA /* SceneDelegate.swift */,
-				C1BCCAC225D52784004955DA /* Main.storyboard */,
 				C1BCCAC525D52786004955DA /* Assets.xcassets */,
 				C1BCCAC725D52786004955DA /* LaunchScreen.storyboard */,
 				C1BCCACA25D52786004955DA /* Info.plist */,
@@ -363,7 +366,6 @@
 			files = (
 				C1BCCAC925D52786004955DA /* LaunchScreen.storyboard in Resources */,
 				C1BCCAC625D52786004955DA /* Assets.xcassets in Resources */,
-				C1BCCAC425D52784004955DA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +391,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C141670A262EC8C100E16E47 /* GradientEffectViewController.swift in Sources */,
+				C1C764F12643EA550040F68E /* MilestoneViewController.swift in Sources */,
+				C1C764F626457FBC0040F68E /* CardText.swift in Sources */,
 				C1BEF101263AD9E90037DE64 /* HobbiesViewController.swift in Sources */,
 				C1A46CD325E5A11E004B5D51 /* GitHubController.swift in Sources */,
 				C19332012600D75200D463F1 /* AutomotiveViewController.swift in Sources */,
@@ -448,14 +452,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C1BCCAC225D52784004955DA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C1BCCAC325D52784004955DA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C1BCCAC725D52786004955DA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

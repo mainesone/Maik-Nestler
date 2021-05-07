@@ -8,6 +8,7 @@
 import UIKit
 
 class CardImage: UIImageView {
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
